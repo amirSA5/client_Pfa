@@ -14,7 +14,8 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'npm i --legacy-peer-deps'
+                sh 'npm install --force'
+                
             }
         }
         stage('Test') {
